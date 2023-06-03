@@ -1,0 +1,34 @@
+[
+  {
+    "name": "appSpecification",
+    "appPackage": "com.radio.calculator",
+    "appWaitActivity": "com.radio.calculator",
+    "appPath": "/src/main/app/calculator.app"
+  },
+  {
+    "name": "local",
+    "deviceName": "iPhone 14 Pro",
+    "platformName": "iOS",
+    "platformVersion": "16.2",
+    "automationName": "XCUITest",
+    "udId": "9602D634-8BD1-411B-89B6-D8F4DD6994BA",
+    "fullReset": true,
+    "appWaitDuration": 45000
+  },
+  {
+    "name": "browserstack",
+    "deviceName": "iPhone 14 Pro",
+    "platformName": "ios",
+    "platformVersion": "16",
+    "automationName": "XCUITest",
+    "app": "bs://yourId"
+  },
+  {
+    "name": "browserstack",
+    "deviceName": "iPhone 14",
+    "platformName": "ios",
+    "platformVersion": "15",
+    "automationName": "XCUITest",
+    "app": "bs://yourId"
+  }
+]

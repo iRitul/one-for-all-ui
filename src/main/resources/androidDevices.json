@@ -1,0 +1,41 @@
+[
+  {
+    "name": "appSpecification",
+    "appPackage": "com.radio.calculator",
+    "appWaitActivity": "com.radio.calculator",
+    "appPath": "/src/main/app/calculator.apk"
+  },
+  {
+    "name": "local",
+    "deviceName": "emulator-5554",
+    "platformName": "Android",
+    "platformVersion": "12.0",
+    "automationName": "UIAutomator2",
+    "fullReset": true,
+    "appWaitDuration": 45000
+  },
+  {
+    "name": "browserstack",
+    "deviceName": "Samsung Galaxy S23",
+    "platformName": "Android",
+    "platformVersion": "13.0",
+    "automationName": "UIAutomator2",
+    "app": "bs://yourId"
+  },
+  {
+    "name": "browserstack",
+    "deviceName": "Samsung Galaxy S23 Ultra",
+    "platformName": "Android",
+    "platformVersion": "13.0",
+    "automationName": "UIAutomator2",
+    "app": "bs://yourId"
+  },
+  {
+    "name": "browserstack",
+    "deviceName": "OnePlus 9",
+    "platformName": "Android",
+    "platformVersion": "11.0",
+    "automationName": "UIAutomator2",
+    "app": "bs://yourId"
+  }
+]

@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mobile-automation-framework" thread-count="2" parallel="tests">
+    <parameter name="os" value="android"/>
+    <parameter name="executionType" value="browserstack"/>
+    <parameter name="threadCount" value="2"/>
+    <listeners>
+        <!--	<listener class-name="listeners.TestListener"/>-->
+        <!--	<listener class-name="listeners.AllureListener"></listener>-->
+    </listeners>
+    <test name="automation-tests">
+        <classes>
+            <class name="tests.sample.SampleTest"/>
+        </classes>
+    </test>
+    <test name="automation-tests-2">
+        <classes>
+            <class name="tests.sample2.SampleTest2"/>
+        </classes>
+    </test>
+</suite>

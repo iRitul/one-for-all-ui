@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="mobile-automation-framework">
+    <parameter name="os" value="android"/>
+    <parameter name="executionType" value="browserstack"/>
+    <parameter name="threadCount" value="1"/>
+    <parameter name="location" value="us"/>
+
+    <listeners>
+        <listener class-name="listeners.TestListener"></listener>
+    </listeners>
+
+    <test name="automation-tests">
+        <classes>
+            <class name="tests.sample.SampleTest"/>
+            <class name="tests.sample2.SampleTest2"/>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,9 @@
+/target
+*.apk
+*.ipa
+.idea/
+LogFile.txt
+/Screenshots
+/src/main/java/app/
+.DS_Store
+/allure-results
