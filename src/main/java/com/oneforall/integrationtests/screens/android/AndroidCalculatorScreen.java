@@ -11,7 +11,7 @@ public class AndroidCalculatorScreen extends CalculatorScreen {
     public static final Logger LOG = Logger.getLogger(AndroidCalculatorScreen.class);
     private AndroidDriver driver;
 
-    private static String byNumberButtonIdText = "digit_'%s']";
+    private static String byNumberButtonIdText = "digit_'%s'";
     private static By byPlusButtonId = MobileBy.id("op_add");
     private static By byMinusButtonId = MobileBy.id("op_sub");
     private static By byEqualToButtonId = MobileBy.id("eq");
