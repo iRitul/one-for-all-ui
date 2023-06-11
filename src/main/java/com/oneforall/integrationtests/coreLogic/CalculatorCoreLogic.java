@@ -29,6 +29,7 @@ public class CalculatorCoreLogic {
 
     public CalculatorCoreLogic subtractSingleDigitNumbers(List<Integer> numbers) {
         int expected = numbers.get(0);
+        calculatorScreen.clickNumber(expected).clickOnMinusButton();
         for (int i = 1; i < numbers.size(); i++) {
             expected -= numbers.get(i);
             calculatorScreen.clickNumber(numbers.get(i)).clickOnMinusButton();

@@ -30,7 +30,7 @@ public class SampleTest2 extends CreateSession {
         calculatorCoreLogic = new CalculatorCoreLogic(driver, os);
     }
 
-    @Test(testName = "Addition test")
+    @Test(testName = "Subtraction test")
     @Severity(SeverityLevel.NORMAL)
     @Description("Subtraction of single digit numbers")
     public void subtractionTest() {
