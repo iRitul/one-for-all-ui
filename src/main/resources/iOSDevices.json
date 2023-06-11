@@ -3,7 +3,7 @@
     "name": "appSpecification",
     "appPackage": "com.radio.calculator",
     "appWaitActivity": "com.radio.calculator",
-    "appPath": "/src/main/app/calculator.app"
+    "appPath": "/src/main/resources/apps/calculator.app"
   },
   {
     "name": "local",

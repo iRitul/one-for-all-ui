@@ -57,7 +57,7 @@ public class CreateSession {
     public void invokeAppium() throws Exception {
         String OS = System.getProperty("os.name").toLowerCase();
         try {
-//            startAppiumServer(OS); // TODO: Fix it
+            startAppiumServer(OS); // TODO: Fix it
             LOG.info("Appium server started successfully");
         } catch (Exception e) {
             Log.logError(getClass().getName(), "startAppium", "Unable to start appium server");
@@ -164,7 +164,7 @@ public class CreateSession {
             appiumService.start();
         } else if (os.contains("mac os x")) {
             builder = new AppiumServiceBuilder()
-                    .usingAnyFreePort()
+                    .usingPort(4723)
                     .withArgument(GeneralServerFlag.SESSION_OVERRIDE)
                     .withArgument(GeneralServerFlag.LOG_LEVEL, "error");
         } else if (os.contains("linux")) {
