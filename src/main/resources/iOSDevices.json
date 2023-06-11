@@ -11,7 +11,7 @@
     "platformName": "iOS",
     "platformVersion": "16.2",
     "automationName": "XCUITest",
-    "udId": "9602D634-8BD1-411B-89B6-D8F4DD6994BA",
+    "udid": "9602D634-8BD1-411B-89B6-D8F4DD6994BA",
     "fullReset": true,
     "appWaitDuration": 45000
   },

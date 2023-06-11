@@ -29,7 +29,7 @@ public class IOSDeviceModel {
     private Boolean fullReset;
     private int appWaitDuration;
     private String appiumVersion;
-    private String udId;
+    private String udid;
 
     public String getName() {
         return name;
@@ -90,6 +90,6 @@ public class IOSDeviceModel {
     }
 
     public String getUDID() {
-        return udId;
+        return udid;
     }
 }
