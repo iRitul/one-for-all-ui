@@ -71,25 +71,20 @@ findElements(By locator) - method to find all the elements of specific locator
 ### Javadoc of the project can be found in doc folder. It contains information all classes and methods.
 
                                             xxxxxxxxxxxxxxxxxxxxxxxxxxxx
-### How to execute a test
+### Troubleshooting 
 
-Maven is used as build tool (can be downloaded from [here](https://maven.apache.org/download.cgi)). pom.xml file is present in base directory which has all the required dependencies and code to invoke testng.xml file when executed from command line.
+1. Unable to start Appium server:
+java.lang.Exception: Invalid server instance exception has occured: There is no installed nodes! 
 
-Connect your device to your machine or start the emulator.
+Add JS path in command to start appium server (CreateSession.java -> startAppiumServer) 
 
-*Note: start appium server on your machine if not included programatically*
+'builder = new AppiumServiceBuilder()
+**.withAppiumJS(new File("/usr/local/lib/node_modules/appium/build/lib/main.js"))
+.usingPort(4723)**
+.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+.withArgument(GeneralServerFlag.LOG_LEVEL, "error");'
 
-###### Run below commands to execute android cucumber test:
 
-$ cd one-for-all-ui/
-$ mvn test -Dos=android -Dsurefire.suiteXmlFiles=testng.xml
-
-*Include iOS app on which you want to run test. Provide its path in config.xml file (src/main/resources/iOSDevices.json). And write  screen locators in IOSLoginScreen and methods in IOSLoginCorelogic. Now you are ready to run below commands.*
-
-###### Run below commands to execute iOS cucumber test:
-
-$ cd one-for-all-ui/
-$ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
 
 
