@@ -36,7 +36,7 @@ $ mvn test -Dos=iOS -Dsurefire.suiteXmlFiles=testng.xml
 
 ### Architecture Overview
 
-**Package : allforone** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
+**Package : oneforall** : It includes the common classes (and methods) which are required by each test to perform actions. Below are classes in this package:
 
 **retryLogic** : It has classes to implement retry in case of failure of a test. Retry count  is set to 1 as of now. Test will be run once if it fails during the execution.
 

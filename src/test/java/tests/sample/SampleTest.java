@@ -1,12 +1,12 @@
 package tests.sample;
 
-import allforone.CreateSession;
-import config.DeviceConfig;
-import config.UserDetailsModel;
-import integrationtests.coreLogic.CalculatorCoreLogic;
+import com.oneforall.CreateSession;
+import com.oneforall.config.DeviceConfig;
+import com.oneforall.config.UserDetailsModel;
+import com.oneforall.integrationtests.coreLogic.CalculatorCoreLogic;
 import io.qameta.allure.*;
-import listeners.AllureListener;
-import logger.Log;
+import com.oneforall.listeners.AllureListener;
+import com.oneforall.logger.Log;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
