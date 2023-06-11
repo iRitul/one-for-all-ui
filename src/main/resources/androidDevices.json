@@ -1,9 +1,9 @@
 [
   {
     "name": "appSpecification",
-    "appPackage": "com.radio.calculator",
-    "appWaitActivity": "com.radio.calculator",
-    "appPath": "/src/main/app/calculator.apk"
+    "appPackage": "com.google.android.calculator",
+    "appWaitActivity": "com.android.calculator2.Calculator",
+    "appPath": "/src/main/resources/apps/Calculator.apk"
   },
   {
     "name": "local",

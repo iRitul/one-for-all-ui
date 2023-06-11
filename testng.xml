@@ -1,9 +1,8 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 <suite name="mobile-automation-framework">
     <parameter name="os" value="android"/>
-    <parameter name="executionType" value="browserstack"/>
+    <parameter name="executionType" value="local"/>
     <parameter name="threadCount" value="1"/>
-    <parameter name="location" value="us"/>
 
     <listeners>
         <listener class-name="com.oneforall.listeners.TestListener"></listener>

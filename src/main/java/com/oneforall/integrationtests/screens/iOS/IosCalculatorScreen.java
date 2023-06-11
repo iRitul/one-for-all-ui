@@ -10,9 +10,6 @@ import org.openqa.selenium.WebDriver;
 public class IosCalculatorScreen extends CalculatorScreen {
     public static final Logger LOG = Logger.getLogger(IosCalculatorScreen.class);
     private IOSDriver driver;
-    public IosCalculatorScreen(WebDriver driver) {
-        this.driver = (IOSDriver) driver;
-    }
 
     private static String byNumberButtonText = "//XCUIElementTypeButton[@name='%s']";
     private static By byPlusButtonXpath = MobileBy.xpath("//XCUIElementTypeButton[@name='+']");
@@ -20,14 +17,14 @@ public class IosCalculatorScreen extends CalculatorScreen {
     private static By byEqualsToButtonXpath = MobileBy.xpath("//XCUIElementTypeButton[@name='=']");
     private static By byResultAccessibilityId = new MobileBy.ByAccessibilityId("numberField");
 
+    public IosCalculatorScreen(WebDriver driver) {
+        this.driver = (IOSDriver) driver;
+    }
+
     @Override
     public CalculatorScreen clickNumber(int number) {
         genericMethods.waitForClickabilityOf(getNumberButtonXpath(number)).click();
         return this;
-    }
-
-    private By getNumberButtonXpath(int number) {
-        return By.xpath(String.format(byNumberButtonText, number));
     }
 
     @Override
@@ -56,5 +53,9 @@ public class IosCalculatorScreen extends CalculatorScreen {
     public CalculatorScreen clickOnMinusButton() {
         genericMethods.waitForClickabilityOf(byMinusButtonXpath).click();
         return this;
+    }
+
+    private By getNumberButtonXpath(int number) {
+        return By.xpath(String.format(byNumberButtonText, number));
     }
 }
