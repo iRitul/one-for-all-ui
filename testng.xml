@@ -6,7 +6,7 @@
     <parameter name="location" value="us"/>
 
     <listeners>
-        <listener class-name="listeners.TestListener"></listener>
+        <listener class-name="com.oneforall.listeners.TestListener"></listener>
     </listeners>
 
     <test name="automation-tests">
