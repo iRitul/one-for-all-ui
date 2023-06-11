@@ -15,9 +15,9 @@ public class CalculatorCoreLogic {
         assertion = new Assertion();
     }
 
-    public CalculatorCoreLogic addSingleDigitNumbers(List<Integer> integers) {
+    public CalculatorCoreLogic addSingleDigitNumbers(List<Integer> numbers) {
         int expectedSum = 0;
-        for (int i : integers) {
+        for (int i : numbers) {
             expectedSum += i;
             calculatorScreen.clickNumber(i).clickOnPlusButton();
         }
@@ -27,11 +27,11 @@ public class CalculatorCoreLogic {
         return this;
     }
 
-    public CalculatorCoreLogic subtractSingleDigitNumbers(List<Integer> integers) {
-        int expected = integers.get(0);
-        for (int i = 1; i < integers.size(); i++) {
-            expected -= integers.get(i);
-            calculatorScreen.clickNumber(integers.get(i)).clickOnMinusButton();
+    public CalculatorCoreLogic subtractSingleDigitNumbers(List<Integer> numbers) {
+        int expected = numbers.get(0);
+        for (int i = 1; i < numbers.size(); i++) {
+            expected -= numbers.get(i);
+            calculatorScreen.clickNumber(numbers.get(i)).clickOnMinusButton();
         }
         calculatorScreen.clickOnDeleteButton().clickOnEqualToButton();
         int remaining = calculatorScreen.getResult();

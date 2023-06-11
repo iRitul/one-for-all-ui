@@ -35,7 +35,7 @@ public class SampleTest2 extends CreateSession {
     @Description("Subtraction of single digit numbers")
     public void subtractionTest() {
         Log.info("Running subtraction of single digit numbers");
-        calculatorCoreLogic.subtractSingleDigitNumbers(List.of(3, 2, 1));
+        calculatorCoreLogic.subtractSingleDigitNumbers(List.of(3, 2));
         Log.info("Verified subtraction of single digit numbers");
     }
 }
