@@ -17,7 +17,7 @@ public abstract class CalculatorScreen {
         }
     }
 
-    public abstract CalculatorScreen clickNumber(int i);
+    public abstract CalculatorScreen clickNumber(int number);
 
     public abstract CalculatorScreen clickOnPlusButton();
 

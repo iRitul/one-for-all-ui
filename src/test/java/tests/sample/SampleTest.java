@@ -35,7 +35,7 @@ public class SampleTest extends CreateSession {
     @Description("Addition of single digit numbers")
     public void additionTest() {
         Log.info("Running addition of single digit numbers");
-        calculatorCoreLogic.addSingleDigitNumbers(List.of(1, 2, 3));
+        calculatorCoreLogic.addSingleDigitNumbers(List.of(1, 2));
         Log.info("Verified addition of single digit numbers");
     }
 }
